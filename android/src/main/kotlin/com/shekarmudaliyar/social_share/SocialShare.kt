@@ -19,22 +19,13 @@ import io.flutter.plugin.common.MethodChannel.Result
 import io.flutter.plugin.common.PluginRegistry.Registrar
 import java.io.File
 
-class SocialSharePlugin:FlutterPlugin, MethodCallHandler, ActivityAware {
+class SocialShare:FlutterPlugin, MethodCallHandler, ActivityAware {
     private lateinit var channel: MethodChannel
     private var activity: Activity? = null
     private var activeContext: Context? = null
     private var context: Context? = null
 
-<<<<<<< HEAD:android/src/main/kotlin/com/shekarmudaliyar/social_share/SocialShare.kt
-/** SocialShare */
-class SocialShare(private val registrar: Registrar):  MethodCallHandler {
 
-  companion object {
-    @JvmStatic
-    fun registerWith(registrar: Registrar) {
-      val channel = MethodChannel(registrar.messenger(), "social_share")
-      channel.setMethodCallHandler(SocialShare(registrar))
-=======
     override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
         context = flutterPluginBinding.applicationContext
         channel = MethodChannel(flutterPluginBinding.binaryMessenger, "social_share")
@@ -243,6 +234,5 @@ class SocialShare(private val registrar: Registrar):  MethodCallHandler {
 
     override fun onDetachedFromActivity() {
         activity = null
->>>>>>> social_share/master:android/src/main/kotlin/com/shekarmudaliyar/social_share/SocialSharePlugin.kt
     }
 }

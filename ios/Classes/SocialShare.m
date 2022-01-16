@@ -3,25 +3,13 @@
 //  Copyright © 2019 Shekar Mudaliyar. All rights reserved.
 //
 
-<<<<<<< HEAD:ios/Classes/SocialShare.m
-
 #import "SocialShare.h"
-=======
-#import "SocialSharePlugin.h"
->>>>>>> social_share/master:ios/Classes/SocialSharePlugin.m
 #include <objc/runtime.h>
 
 @implementation SocialShare
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
-<<<<<<< HEAD:ios/Classes/SocialShare.m
-  FlutterMethodChannel* channel = [FlutterMethodChannel
-      methodChannelWithName:@"social_share"
-            binaryMessenger:[registrar messenger]];
-  SocialShare* instance = [[SocialShare alloc] init];
-=======
   FlutterMethodChannel* channel = [FlutterMethodChannel methodChannelWithName:@"social_share" binaryMessenger:[registrar messenger]];
-  SocialSharePlugin* instance = [[SocialSharePlugin alloc] init];
->>>>>>> social_share/master:ios/Classes/SocialSharePlugin.m
+  SocialShare* instance = [[SocialShare alloc] init];
   [registrar addMethodCallDelegate:instance channel:channel];
 }
 
