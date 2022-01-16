@@ -1,3 +1,22 @@
+## 2.2.1
+
+- migrated to android v2 embedding
+- imporved null safety
+
+## 2.1.1
+
+- Val reassign error fix
+
+## 2.1.0
+
+- Migrated to null saftey
+
+## 2.0.6
+
+- shareInstagramStory refactor
+- URI parsing fixes
+- build error fixes
+
 ## 2.0.5
 
 - shareOptions without image fixed
